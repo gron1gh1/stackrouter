@@ -1,29 +1,15 @@
-# react-native-stack-browser
-rn stack browser
-## Installation
+# stackrouter
+Smooth integration of react navigation and webview for React Native apps
 
-```sh
-npm install react-native-stack-browser
-```
+> :warning: It's still under development🥺
+## What is stackrouter?
+`stackrouter` is inspired by [react navigation](https://github.com/react-navigation/react-navigation) and [stackflow](https://github.com/daangn/stackflow).
+  
+react-navigation only stacks native activity, but not webview history. `stackrouter` stacks native activity and webview history together, Therefore smooth native and webview integration.
 
-## Usage
-
-```js
-import { multiply } from "react-native-stack-browser";
-
-// ...
-
-const result = await multiply(3, 7);
-```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+### The following actions are possible:
+**(Include Revert)**  
+* React Native Activity => Webview => Webview => React Native Activity
+* Webview => Webview => React Native Activity => Webview
+* Webview => React Native Activity  => React Native Activity 
+* ...etc
